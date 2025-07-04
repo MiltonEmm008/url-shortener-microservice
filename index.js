@@ -7,7 +7,7 @@ const app = express();
 const mongoose = require("mongoose");
 
 mongoose
-  .connect("mongodb://localhost:27017/short_url")
+  .connect(process.env.MONGOURL)
   .then(() => console.log("MongoDB conectado"))
   .catch((err) => console.error("Error al conectar", err));
 
