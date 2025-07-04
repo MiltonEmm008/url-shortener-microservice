@@ -16,7 +16,7 @@ const Urls = mongoose.model(
   new mongoose.Schema({
     original_url: String,
     short_url: Number,
-  })
+  }) 
 );
 
 // Basic Configuration
